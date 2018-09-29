@@ -7,15 +7,20 @@
   
   
   
-  <title>さとり世代のプログラマノート</title>
+  <title>Windows環境でHexoとVSCodeでGithub PagesにDeployする方法 | さとり世代のプログラマノート</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="さとり世代のプログラマノート">
-<meta property="og:url" content="https://nakaiyusaku.github.io/Blog/index.html">
+  <meta name="description" content="準備・Github Pagesの用意・VSCodeの拡張機能 vscode-hexo をインストール 爆速のブログ生成VSCodeでターミナルを開き、以下を順に打ち込みます。123hexo init [適当なプロジェクト名]cd [適当なプロジェクト名]npm install これで、[適当なプロジェクト名]フォルダが作成されて、ブログ生成に必要なインストール等は完了しています。 続いて、ターミ">
+<meta name="keywords" content="Hexo,Github Pages">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows環境でHexoとVSCodeでGithub PagesにDeployする方法">
+<meta property="og:url" content="https://nakaiyusaku.github.io/Blog/2018/09/29/HexoDeployWithWindowsVSCode/index.html">
 <meta property="og:site_name" content="さとり世代のプログラマノート">
+<meta property="og:description" content="準備・Github Pagesの用意・VSCodeの拡張機能 vscode-hexo をインストール 爆速のブログ生成VSCodeでターミナルを開き、以下を順に打ち込みます。123hexo init [適当なプロジェクト名]cd [適当なプロジェクト名]npm install これで、[適当なプロジェクト名]フォルダが作成されて、ブログ生成に必要なインストール等は完了しています。 続いて、ターミ">
 <meta property="og:locale" content="ja">
+<meta property="og:updated_time" content="2018-09-29T16:14:09.219Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="さとり世代のプログラマノート">
+<meta name="twitter:title" content="Windows環境でHexoとVSCodeでGithub PagesにDeployする方法">
+<meta name="twitter:description" content="準備・Github Pagesの用意・VSCodeの拡張機能 vscode-hexo をインストール 爆速のブログ生成VSCodeでターミナルを開き、以下を順に打ち込みます。123hexo init [適当なプロジェクト名]cd [適当なプロジェクト名]npm install これで、[適当なプロジェクト名]フォルダが作成されて、ブログ生成に必要なインストール等は完了しています。 続いて、ターミ">
   
     <link rel="alternative" href="/Blog/atom.xml" title="さとり世代のプログラマノート" type="application/atom+xml">
   
@@ -27,9 +32,6 @@
   <link rel="stylesheet" href="/Blog/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/Blog/apple-touch-icon.png">
   
-    
-    
-  
   
       <link rel="stylesheet" href="/Blog/fancybox/jquery.fancybox.css">
   
@@ -40,8 +42,8 @@
       var yiliaConfig = {
           fancybox: true,
           animate: false,
-          isHome: true,
-          isPost: false,
+          isHome: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -198,9 +200,7 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="black-blue-HexoDeployWithWindowsVSCode" class="article article-type-black-blue" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="black-blue-HexoDeployWithWindowsVSCode" class="article article-type-black-blue" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a  href="/Blog/2018/09/29/HexoDeployWithWindowsVSCode/" class="article-date">
@@ -217,13 +217,28 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a  class="article-title" href="/Blog/2018/09/29/HexoDeployWithWindowsVSCode/">Windows環境でHexoとVSCodeでGithub PagesにDeployする方法</a>
+    <h1 class="article-title" itemprop="name">
+      Windows環境でHexoとVSCodeでGithub PagesにDeployする方法
     </h1>
   
 
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/Blog/categories/Develop/">Develop</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Blog/tags/Github-Pages/">Github Pages</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Blog/tags/Hexo/">Hexo</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -251,97 +266,130 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/Blog/categories/Develop/">Develop</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Blog/tags/Github-Pages/">Github Pages</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Blog/tags/Hexo/">Hexo</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>Title:</span><a  href="/Blog/2018/09/29/HexoDeployWithWindowsVSCode/">Windows環境でHexoとVSCodeでGithub PagesにDeployする方法</a></p>
+        <p><span>Author:</span><a  href="/Blog/">Nakai Yusaku</a></p>
+        <p><span>Created:</span>2018年09月29日 - 22时44分</p>
+        <p><span>Updated:</span>2018年09月30日 - 01时14分</p>
+
+    </div>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a  href="/Blog/2018/09/28/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+
   
 </article>
 
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Subtitle</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#準備"><span class="toc-number">1.</span> <span class="toc-text">準備</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#爆速のブログ生成"><span class="toc-number">2.</span> <span class="toc-text">爆速のブログ生成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Github-Pagesへのデプロイ"><span class="toc-number">3.</span> <span class="toc-text">Github Pagesへのデプロイ</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#しかし出来ない"><span class="toc-number">4.</span> <span class="toc-text">しかし出来ない</span></a></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+<input type="button" id="tocButton" value="Hide">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+<script>
+    var valueHide = "Hide";
+    var valueShow = "Show";
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
 
 
 
 
+<div class="bdsharebuttonbox">
+
+</div>
+<script>
+</script>
 
 
 
 
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a  href="/Blog/2018/09/28/hello-world/" class="article-date">
-      <time datetime="2018-09-28T10:53:28.193Z" itemprop="datePublished">2018-09-28</time>
-</a>
-
-    </div>
-  
-  <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+
+
+
+    <div class="scroll" id="post-nav-button">
         
-  
-    <h1 itemprop="name">
-      <a  class="article-title" href="/Blog/2018/09/28/hello-world/">Hello World</a>
-    </h1>
-  
-
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>Thank you for visiting.<br>Created blog by Hexo.<br>See you again!</p>
-
-      
+            <a  href="/Blog/" title="Home"><i class="fa fa-home"></i></a>
+        
+        <a title="Subtitle"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a  href="/Blog/2018/09/28/hello-world/" title="Bottom: Hello World">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
     </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/Blog/2018/09/29/HexoDeployWithWindowsVSCode/">Windows環境でHexoとVSCodeでGithub PagesにDeployする方法</a></li><li class="post-list-item"><a class="post-list-link" href="/Blog/2018/09/28/hello-world/">Hello World</a></li></ul>
     
-    <div class="article-info article-info-index">
-      
-      
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
 
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
+    <script>
+        $(".post-list").addClass("toc-article");
+        // $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
 
 
 
 
-
-
-
-
-
-
-
-  
-  
+    <script>
+        
+    </script>
 
 </div>
       <footer id="footer">
