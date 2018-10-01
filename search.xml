@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Windows環境でHexoとVSCodeでGithub PagesにDeployする方法]]></title>
+    <url>%2F2018%2F09%2F29%2FHexoDeployWithWindowsVSCode%2F</url>
+    <content type="text"><![CDATA[準備・Github Pagesの用意・VSCodeの拡張機能 vscode-hexo をインストール 爆速のブログ生成VSCodeでターミナルを開き、以下を順に打ち込みます。123hexo init [適当なプロジェクト名]cd [適当なプロジェクト名]npm install これで、[適当なプロジェクト名]フォルダが作成されて、ブログ生成に必要なインストール等は完了しています。 続いて、ターミナルで以下を打ち込みます。1hexo server ターミナルに INFO Hexo is running at http://localhost:4000 . Press Ctrl+C to stop. などと表示されているかと思います。 Ctrl+Cでアクセスするとブログを確認する事ができます。正常に動作していれば、これでとりあえずブログ自体の生成には成功です。 Github Pagesへのデプロイまずは必要なHexoプラグインをインストールします。1npm install hexo-deployer-git 続いて、[適当なプロジェクト名]/_config.ymlを開き、以下の場所を設定します。123456# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy: type: git repo: https://github.com/[username]/[repositoryname].git branch: master 続いて、ターミナルで以下を打ち込むとデプロイされます。1hexo deploy -g しかし出来ないデプロイ時に以下のようなエラーが出る方がいると思われます。私はここでハマりました。1234Fatal: HttpRequestException encountered.bash: /dev/tty: No such device or addresserror: failed to execute prompt script (exit code 1)... 結論gitの設定を行うと上手くいきました。globalじゃないといけないのが辛いけど。1234&gt; git config --global credential.helper wincred&gt; git config --global user.name &quot;ユーザー名&quot;&gt; git config --global user.email &quot;githubに登録しているメールアドレス&quot;&gt;]]></content>
+      <categories>
+        <category>Develop</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Github Pages</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F09%2F28%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Hello WorldThank you for visiting.Created blog by Hexo.See you again!]]></content>
+  </entry>
+</search>

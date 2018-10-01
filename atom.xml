@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>さとり世代のプログラマノート</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/"/>
+  <updated>2018-09-29T16:14:09.219Z</updated>
+  <id>https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/</id>
+  
+  <author>
+    <name>Nakai Yusaku</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows環境でHexoとVSCodeでGithub PagesにDeployする方法</title>
+    <link href="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/2018/09/29/HexoDeployWithWindowsVSCode/"/>
+    <id>https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/2018/09/29/HexoDeployWithWindowsVSCode/</id>
+    <published>2018-09-29T13:44:55.000Z</published>
+    <updated>2018-09-29T16:14:09.219Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h2 id="準備"><a href="#準備" class="headerlink" title="準備"></a>準備</h2><p>・Github Pagesの用意<br>・VSCodeの拡張機能 vscode-hexo をインストール</p><h2 id="爆速のブログ生成"><a href="#爆速のブログ生成" class="headerlink" title="爆速のブログ生成"></a>爆速のブログ生成</h2><p>VSCodeでターミナルを開き、以下を順に打ち込みます。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init [適当なプロジェクト名]</span><br><span class="line">cd [適当なプロジェクト名]</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p><p>これで、[適当なプロジェクト名]フォルダが作成されて、ブログ生成に必要なインストール等は完了しています。</p><p>続いて、ターミナルで以下を打ち込みます。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></p><p>ターミナルに</p><blockquote><p>INFO  Hexo is running at <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> . Press Ctrl+C to stop.</p></blockquote><p>などと表示されているかと思います。</p><p>Ctrl+Cでアクセスするとブログを確認する事ができます。<br>正常に動作していれば、これでとりあえずブログ自体の生成には成功です。</p><h2 id="Github-Pagesへのデプロイ"><a href="#Github-Pagesへのデプロイ" class="headerlink" title="Github Pagesへのデプロイ"></a>Github Pagesへのデプロイ</h2><p>まずは必要なHexoプラグインをインストールします。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git</span><br></pre></td></tr></table></figure></p><p>続いて、[適当なプロジェクト名]/_config.ymlを開き、以下の場所を設定します。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/[username]/[repositoryname].git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p><p>続いて、ターミナルで以下を打ち込むとデプロイされます。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy -g</span><br></pre></td></tr></table></figure></p><h2 id="しかし出来ない"><a href="#しかし出来ない" class="headerlink" title="しかし出来ない"></a>しかし出来ない</h2><p>デプロイ時に以下のようなエラーが出る方がいると思われます。<br>私はここでハマりました。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Fatal: HttpRequestException encountered.</span><br><span class="line">bash: /dev/tty: No such device or address</span><br><span class="line">error: failed to execute prompt script (exit code 1)</span><br><span class="line">...</span><br></pre></td></tr></table></figure></p><blockquote><p>結論<br>gitの設定を行うと上手くいきました。<br>globalじゃないといけないのが辛いけど。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; git config --global credential.helper wincred</span><br><span class="line">&gt; git config --global user.name &quot;ユーザー名&quot;</span><br><span class="line">&gt; git config --global user.email &quot;githubに登録しているメールアドレス&quot;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;hr&gt;
+&lt;h2 id=&quot;準備&quot;&gt;&lt;a href=&quot;#準備&quot; class=&quot;headerlink&quot; title=&quot;準備&quot;&gt;&lt;/a&gt;準備&lt;/h2&gt;&lt;p&gt;・Github Pagesの用意&lt;br&gt;・VSCodeの拡張機能 vscode-hexo をインストール&lt;/p&gt;
+&lt;h2 id=&quot;
+      
+    
+    </summary>
+    
+      <category term="Develop" scheme="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/categories/Develop/"/>
+    
+    
+      <category term="Hexo" scheme="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/tags/Hexo/"/>
+    
+      <category term="Github Pages" scheme="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/tags/Github-Pages/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/2018/09/28/hello-world/"/>
+    <id>https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/2018/09/28/hello-world/</id>
+    <published>2018-09-28T10:53:28.193Z</published>
+    <updated>2018-09-28T18:12:20.575Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>Thank you for visiting.<br>Created blog by Hexo.<br>See you again!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Hello-World&quot;&gt;&lt;a href=&quot;#Hello-World&quot; class=&quot;headerlink&quot; title=&quot;Hello World&quot;&gt;&lt;/a&gt;Hello World&lt;/h2&gt;&lt;p&gt;Thank you for visiting.&lt;br&gt;Created
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
