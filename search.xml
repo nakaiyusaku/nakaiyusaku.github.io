@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Microsoft Flowを使って、ブログ記事の投稿をTwitterで自動的に告知する方法]]></title>
+    <url>%2F2018%2F10%2F02%2FTweetByMSFlow%2F</url>
+    <content type="text"><![CDATA[Microsoft Flow とはMicrosoft公式のタスク自動化ツールです。私たちが普段使っているWebサービス同士を連携させたり、自作のWebサービスにおいてもWebAPIを用意する事で他のWebサービスと連携させる事で、あらゆる自動化がノンコーディングで簡単に行えます。公式 : https://japan.flow.microsoft.com/ja-jp/ 今回はMicrosoft Flowで、RSSとTwitterを使ってブログ記事の投稿告知を自動化してみます。 ブログ記事の投稿をTwitterで告知するRSSの更新を検知し、TwitterでTweetするFlowを作成します。Microsoft Flowには、公式で数多くのFlowテンプレートが存在しており、今回の目的のRSSとTwitterの連携も既にテンプレートが用意されていました。↓このように多数のテンプレートが使用できます。 実際に作成したFlowがこちらです。 実際に投稿してみます。(この記事) 自動化の理由(Github Pagesの問題点)本ブログはGithub Pagesで運用しています。Github Pagesでは、記事を投稿してから実際に反映されるまで、たまにラグがあります。酷い時は数時間ものラグがあるそうです。記事を投稿しても、Twitterでそれを告知するには、記事投稿が反映されるのを待たなければいけません。しかし、記事投稿の反映を待って、確認して、告知するのでは面倒です。記事投稿の反映がされたタイミングで、自動でTwitterで告知したいと思うのがプログラマの常です。]]></content>
+      <categories>
+        <category>Microsoft Flow</category>
+      </categories>
+      <tags>
+        <tag>Github Pages</tag>
+        <tag>Twitter</tag>
+        <tag>Microsoft Flow</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Windows環境でHexoとVSCodeでGithub PagesにDeployする方法]]></title>
     <url>%2F2018%2F09%2F29%2FHexoDeployWithWindowsVSCode%2F</url>
     <content type="text"><![CDATA[準備・Github Pagesの用意・VSCodeの拡張機能 vscode-hexo をインストール 爆速のブログ生成VSCodeでターミナルを開き、以下を順に打ち込みます。123hexo init [適当なプロジェクト名]cd [適当なプロジェクト名]npm install これで、[適当なプロジェクト名]フォルダが作成されて、ブログ生成に必要なインストール等は完了しています。 続いて、ターミナルで以下を打ち込みます。1hexo server ターミナルに INFO Hexo is running at http://localhost:4000 . Press Ctrl+C to stop. などと表示されているかと思います。 Ctrl+Cでアクセスするとブログを確認する事ができます。正常に動作していれば、これでとりあえずブログ自体の生成には成功です。 Github Pagesへのデプロイまずは必要なHexoプラグインをインストールします。1npm install hexo-deployer-git 続いて、[適当なプロジェクト名]/_config.ymlを開き、以下の場所を設定します。123456# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy: type: git repo: https://github.com/[username]/[repositoryname].git branch: master 続いて、ターミナルで以下を打ち込むとデプロイされます。1hexo deploy -g しかし出来ないデプロイ時に以下のようなエラーが出る方がいると思われます。私はここでハマりました。1234Fatal: HttpRequestException encountered.bash: /dev/tty: No such device or addresserror: failed to execute prompt script (exit code 1)... 結論gitの設定を行うと上手くいきました。globalじゃないといけないのが辛いけど。1234&gt; git config --global credential.helper wincred&gt; git config --global user.name &quot;ユーザー名&quot;&gt; git config --global user.email &quot;githubに登録しているメールアドレス&quot;&gt;]]></content>
       <categories>
-        <category>Develop</category>
+        <category>Hexo</category>
       </categories>
       <tags>
         <tag>Hexo</tag>
         <tag>Github Pages</tag>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>

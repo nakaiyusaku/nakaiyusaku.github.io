@@ -106,16 +106,16 @@
 
 
 
-  <meta name="description" content="中井優作の備忘録">
+  <meta name="description" content="とあるさとり世代のプログラマの覚え書き。クリエイター・エンジニア向け。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="さとり世代のプログラマノート">
 <meta property="og:url" content="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/index.html">
 <meta property="og:site_name" content="さとり世代のプログラマノート">
-<meta property="og:description" content="中井優作の備忘録">
+<meta property="og:description" content="とあるさとり世代のプログラマの覚え書き。クリエイター・エンジニア向け。">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="さとり世代のプログラマノート">
-<meta name="twitter:description" content="中井優作の備忘録">
+<meta name="twitter:description" content="とあるさとり世代のプログラマの覚え書き。クリエイター・エンジニア向け。">
 
 
 
@@ -338,11 +338,187 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/2018/10/02/TweetByMSFlow/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Nakai Yusaku">
+      <meta itemprop="description" content="とあるさとり世代のプログラマの覚え書き。クリエイター・エンジニア向け。">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="さとり世代のプログラマノート">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/02/TweetByMSFlow/" itemprop="url">
+                  Microsoft Flowを使って、ブログ記事の投稿をTwitterで自動的に告知する方法
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-10-02 23:58:07" itemprop="dateCreated datePublished" datetime="2018-10-02T23:58:07+09:00">2018-10-02</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-10-03 01:02:48" itemprop="dateModified" datetime="2018-10-03T01:02:48+09:00">2018-10-03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Microsoft-Flow/" itemprop="url" rel="index"><span itemprop="name">Microsoft Flow</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<h2 id="Microsoft-Flow-とは"><a href="#Microsoft-Flow-とは" class="headerlink" title="Microsoft Flow とは"></a>Microsoft Flow とは</h2><p>Microsoft公式のタスク自動化ツールです。<br>私たちが普段使っているWebサービス同士を連携させたり、自作のWebサービスにおいてもWebAPIを用意する事で他のWebサービスと連携させる事で、あらゆる自動化がノンコーディングで簡単に行えます。<br><a href="https://japan.flow.microsoft.com/ja-jp/" target="_blank" rel="noopener">公式 : https://japan.flow.microsoft.com/ja-jp/</a></p>
+<p>今回はMicrosoft Flowで、RSSとTwitterを使ってブログ記事の投稿告知を自動化してみます。</p>
+<h2 id="ブログ記事の投稿をTwitterで告知する"><a href="#ブログ記事の投稿をTwitterで告知する" class="headerlink" title="ブログ記事の投稿をTwitterで告知する"></a>ブログ記事の投稿をTwitterで告知する</h2><p>RSSの更新を検知し、TwitterでTweetするFlowを作成します。<br>Microsoft Flowには、公式で数多くのFlowテンプレートが存在しており、今回の目的のRSSとTwitterの連携も既にテンプレートが用意されていました。<br>↓このように多数のテンプレートが使用できます。<br><img src="/2018/10/02/TweetByMSFlow/Template.PNG" title="Microsoft Flowのテンプレート例"></p>
+<p>実際に作成したFlowがこちらです。<br><img src="/2018/10/02/TweetByMSFlow/Flow.PNG" title="実際に作成したFlow"></p>
+<p>実際に投稿してみます。(この記事)</p>
+<h2 id="自動化の理由-Github-Pagesの問題点"><a href="#自動化の理由-Github-Pagesの問題点" class="headerlink" title="自動化の理由(Github Pagesの問題点)"></a>自動化の理由(Github Pagesの問題点)</h2><p>本ブログはGithub Pagesで運用しています。<br>Github Pagesでは、記事を投稿してから実際に反映されるまで、たまにラグがあります。酷い時は数時間ものラグがあるそうです。<br>記事を投稿しても、Twitterでそれを告知するには、記事投稿が反映されるのを待たなければいけません。<br>しかし、記事投稿の反映を待って、確認して、告知するのでは面倒です。<br>記事投稿の反映がされたタイミングで、自動でTwitterで告知したいと思うのがプログラマの常です。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/2018/09/29/HexoDeployWithWindowsVSCode/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Nakai Yusaku">
-      <meta itemprop="description" content="中井優作の備忘録">
+      <meta itemprop="description" content="とあるさとり世代のプログラマの覚え書き。クリエイター・エンジニア向け。">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
@@ -401,7 +577,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-09-30 01:14:09" itemprop="dateModified" datetime="2018-09-30T01:14:09+09:00">2018-09-30</time>
+                <time title="Modified: 2018-10-03 00:44:30" itemprop="dateModified" datetime="2018-10-03T00:44:30+09:00">2018-10-03</time>
               
             
           </span>
@@ -418,7 +594,7 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Develop/" itemprop="url" rel="index"><span itemprop="name">Develop</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
 
                 
                 
@@ -529,7 +705,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Nakai Yusaku">
-      <meta itemprop="description" content="中井優作の備忘録">
+      <meta itemprop="description" content="とあるさとり世代のプログラマの覚え書き。クリエイター・エンジニア向け。">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
@@ -699,7 +875,7 @@
                 alt="Nakai Yusaku" />
             
               <p class="site-author-name" itemprop="name">Nakai Yusaku</p>
-              <p class="site-description motion-element" itemprop="description">中井優作の備忘録</p>
+              <p class="site-description motion-element" itemprop="description">とあるさとり世代のプログラマの覚え書き。クリエイター・エンジニア向け。</p>
           </div>
 
           
@@ -709,7 +885,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -724,7 +900,43 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -741,7 +953,15 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
