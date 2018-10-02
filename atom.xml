@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/"/>
+  <link href="https://nakaiyusaku.github.io/"/>
   <updated>2018-10-02T16:20:29.051Z</updated>
-  <id>https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/</id>
+  <id>https://nakaiyusaku.github.io/</id>
   
   <author>
     <name>Nakai Yusaku</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Microsoft Flowを使って、ブログ記事の投稿をTwitterで自動的に告知する方法</title>
-    <link href="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/2018/10/02/TweetByMSFlow/"/>
-    <id>https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/2018/10/02/TweetByMSFlow/</id>
+    <link href="https://nakaiyusaku.github.io/2018/10/02/TweetByMSFlow/"/>
+    <id>https://nakaiyusaku.github.io/2018/10/02/TweetByMSFlow/</id>
     <published>2018-10-02T14:58:07.000Z</published>
     <updated>2018-10-02T16:20:29.051Z</updated>
     
@@ -35,21 +35,21 @@
     
     </summary>
     
-      <category term="Microsoft Flow" scheme="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/categories/Microsoft-Flow/"/>
+      <category term="Microsoft Flow" scheme="https://nakaiyusaku.github.io/categories/Microsoft-Flow/"/>
     
     
-      <category term="Github Pages" scheme="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/tags/Github-Pages/"/>
+      <category term="Github Pages" scheme="https://nakaiyusaku.github.io/tags/Github-Pages/"/>
     
-      <category term="Twitter" scheme="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/tags/Twitter/"/>
+      <category term="Twitter" scheme="https://nakaiyusaku.github.io/tags/Twitter/"/>
     
-      <category term="Microsoft Flow" scheme="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/tags/Microsoft-Flow/"/>
+      <category term="Microsoft Flow" scheme="https://nakaiyusaku.github.io/tags/Microsoft-Flow/"/>
     
   </entry>
   
   <entry>
     <title>Windows環境でHexoとVSCodeでGithub PagesにDeployする方法</title>
-    <link href="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/2018/09/29/HexoDeployWithWindowsVSCode/"/>
-    <id>https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/2018/09/29/HexoDeployWithWindowsVSCode/</id>
+    <link href="https://nakaiyusaku.github.io/2018/09/29/HexoDeployWithWindowsVSCode/"/>
+    <id>https://nakaiyusaku.github.io/2018/09/29/HexoDeployWithWindowsVSCode/</id>
     <published>2018-09-29T13:44:55.000Z</published>
     <updated>2018-10-02T15:44:30.733Z</updated>
     
@@ -66,21 +66,21 @@
     
     </summary>
     
-      <category term="Hexo" scheme="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://nakaiyusaku.github.io/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://nakaiyusaku.github.io/tags/Hexo/"/>
     
-      <category term="Github Pages" scheme="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/tags/Github-Pages/"/>
+      <category term="Github Pages" scheme="https://nakaiyusaku.github.io/tags/Github-Pages/"/>
     
-      <category term="Windows" scheme="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/tags/Windows/"/>
+      <category term="Windows" scheme="https://nakaiyusaku.github.io/tags/Windows/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/2018/09/28/hello-world/"/>
-    <id>https://github.com/nakaiyusaku/nakaiyusaku.github.io.git/2018/09/28/hello-world/</id>
+    <link href="https://nakaiyusaku.github.io/2018/09/28/hello-world/"/>
+    <id>https://nakaiyusaku.github.io/2018/09/28/hello-world/</id>
     <published>2018-09-28T10:53:28.193Z</published>
     <updated>2018-09-28T18:12:20.575Z</updated>
     
