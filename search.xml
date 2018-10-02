@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Microsoft Flowを使って、ブログ記事の投稿をTwitterで自動的に告知する方法]]></title>
     <url>%2F2018%2F10%2F02%2FTweetByMSFlow%2F</url>
-    <content type="text"><![CDATA[Microsoft Flow とはMicrosoft公式のタスク自動化ツールです。私たちが普段使っているWebサービス同士を連携させたり、自作のWebサービスにおいてもWebAPIを用意する事で他のWebサービスと連携させる事で、あらゆる自動化がノンコーディングで簡単に行えます。公式 : https://japan.flow.microsoft.com/ja-jp/ 今回はMicrosoft Flowで、RSSとTwitterを使ってブログ記事の投稿告知を自動化してみます。 ブログ記事の投稿をTwitterで告知するRSSの更新を検知し、TwitterでTweetするFlowを作成します。Microsoft Flowには、公式で数多くのFlowテンプレートが存在しており、今回の目的のRSSとTwitterの連携も既にテンプレートが用意されていました。↓このように多数のテンプレートが使用できます。 実際に作成したFlowがこちらです。 実際に投稿してみます。(この記事) 自動化の理由(Github Pagesの問題点)本ブログはGithub Pagesで運用しています。Github Pagesでは、記事を投稿してから実際に反映されるまで、たまにラグがあります。酷い時は数時間ものラグがあるそうです。記事を投稿しても、Twitterでそれを告知するには、記事投稿が反映されるのを待たなければいけません。しかし、記事投稿の反映を待って、確認して、告知するのでは面倒です。記事投稿の反映がされたタイミングで、自動でTwitterで告知したいと思うのがプログラマの常です。]]></content>
+    <content type="text"><![CDATA[Microsoft Flow とはMicrosoft公式のタスク自動化ツールです。私たちが普段使っているWebサービス同士を連携させたり、自作のWebサービスにおいてもWebAPIを用意する事で他のWebサービスと連携させる事で、あらゆる自動化がノンコーディングで簡単に行えます。毎月750個のFlow(自動タスク)まで無料で使う事ができます。公式 : https://japan.flow.microsoft.com/ja-jp/ 今回はMicrosoft Flowで、RSSとTwitterを使ってブログ記事の投稿告知を自動化してみます。 ブログ記事の投稿をTwitterで告知するRSSの更新を検知し、TwitterでTweetするFlowを作成します。Microsoft Flowには、公式で数多くのFlowテンプレートが存在しており、今回の目的のRSSとTwitterの連携も既にテンプレートが用意されていました。↓このように多数のテンプレートが使用できます。 実際に作成したFlowがこちらです。 実際に投稿してみます。(この記事) 自動化の理由(Github Pagesの問題点)本ブログはGithub Pagesで運用しています。Github Pagesでは、記事を投稿してから実際に反映されるまで、たまにラグがあります。酷い時は数時間ものラグがあるそうです。記事を投稿しても、Twitterでそれを告知するには、記事投稿が反映されるのを待たなければいけません。しかし、記事投稿の反映を待って、確認して、告知するのでは面倒です。記事投稿の反映がされたタイミングで、自動でTwitterで告知したいと思うのがプログラマの常です。]]></content>
       <categories>
         <category>Microsoft Flow</category>
       </categories>
