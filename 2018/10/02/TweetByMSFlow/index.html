@@ -107,7 +107,7 @@
 
 
   <meta name="description" content="Microsoft Flow とはMicrosoft公式のタスク自動化ツールです。私たちが普段使っているWebサービス同士を連携させたり、自作のWebサービスにおいてもWebAPIを用意する事で他のWebサービスと連携させる事で、あらゆる自動化がノンコーディングで簡単に行えます。毎月750個のFlow(自動タスク)まで無料で使う事ができます。公式 : https://japan.flow.mic">
-<meta name="keywords" content="Github Pages,Twitter,Microsoft Flow">
+<meta name="keywords" content="Github Pages,Microsoft Flow,Twitter">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Microsoft Flowを使って、ブログ記事の投稿をTwitterで自動的に告知する方法">
 <meta property="og:url" content="https://nakaiyusaku.github.io/2018/10/02/TweetByMSFlow/index.html">
@@ -116,7 +116,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://nakaiyusaku.github.io/2018/10/02/TweetByMSFlow/Template.PNG">
 <meta property="og:image" content="https://nakaiyusaku.github.io/2018/10/02/TweetByMSFlow/Flow.PNG">
-<meta property="og:updated_time" content="2018-10-02T16:20:29.051Z">
+<meta property="og:updated_time" content="2018-10-02T16:31:54.005Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Microsoft Flowを使って、ブログ記事の投稿をTwitterで自動的に告知する方法">
 <meta name="twitter:description" content="Microsoft Flow とはMicrosoft公式のタスク自動化ツールです。私たちが普段使っているWebサービス同士を連携させたり、自作のWebサービスにおいてもWebAPIを用意する事で他のWebサービスと連携させる事で、あらゆる自動化がノンコーディングで簡単に行えます。毎月750個のFlow(自動タスク)まで無料で使う事ができます。公式 : https://japan.flow.mic">
@@ -401,7 +401,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-10-03 01:20:29" itemprop="dateModified" datetime="2018-10-03T01:20:29+09:00">2018-10-03</time>
+                <time title="Modified: 2018-10-03 01:31:54" itemprop="dateModified" datetime="2018-10-03T01:31:54+09:00">2018-10-03</time>
               
             
           </span>
@@ -457,8 +457,7 @@
 <p>今回はMicrosoft Flowで、RSSとTwitterを使ってブログ記事の投稿告知を自動化してみます。</p>
 <h2 id="ブログ記事の投稿をTwitterで告知する"><a href="#ブログ記事の投稿をTwitterで告知する" class="headerlink" title="ブログ記事の投稿をTwitterで告知する"></a>ブログ記事の投稿をTwitterで告知する</h2><p>RSSの更新を検知し、TwitterでTweetするFlowを作成します。<br>Microsoft Flowには、公式で数多くのFlowテンプレートが存在しており、今回の目的のRSSとTwitterの連携も既にテンプレートが用意されていました。<br>↓このように多数のテンプレートが使用できます。<br><img src="/2018/10/02/TweetByMSFlow/Template.PNG" title="Microsoft Flowのテンプレート例"></p>
 <p>実際に作成したFlowがこちらです。<br><img src="/2018/10/02/TweetByMSFlow/Flow.PNG" title="実際に作成したFlow"></p>
-<p>実際に投稿してみます。(この記事)<br>一回失敗しました。笑<br>フィードのIDに本記事のURLが入っており、それを使用しなければならない所を、フォードのプライマリリンク(link)を使用してしまっていました。</p>
-<p>↓実際の投稿です。<br></p>
+<p>実際に投稿してみます。(この記事)<br>えー、何回も失敗しました。笑<br>原因はHexoの設定だったようです。(URLを間違えていた。笑)<br>↓成功した際の実際の投稿です。<br></p>
 <h2 id="自動化の理由-Github-Pagesの問題点"><a href="#自動化の理由-Github-Pagesの問題点" class="headerlink" title="自動化の理由(Github Pagesの問題点)"></a>自動化の理由(Github Pagesの問題点)</h2><p>本ブログはGithub Pagesで運用しています。<br>Github Pagesでは、記事を投稿してから実際に反映されるまで、たまにラグがあります。酷い時は数時間ものラグがあるそうです。<br>記事を投稿しても、Twitterでそれを告知するには、記事投稿が反映されるのを待たなければいけません。<br>しかし、記事投稿の反映を待って、確認して、告知するのでは面倒です。<br>記事投稿の反映がされたタイミングで、自動でTwitterで告知したいと思うのがプログラマの常です。</p>
 
       
@@ -482,9 +481,9 @@
           
             <a href="/tags/Github-Pages/" rel="tag"># Github Pages</a>
           
-            <a href="/tags/Twitter/" rel="tag"># Twitter</a>
-          
             <a href="/tags/Microsoft-Flow/" rel="tag"># Microsoft Flow</a>
+          
+            <a href="/tags/Twitter/" rel="tag"># Twitter</a>
           
         </div>
       
@@ -596,40 +595,6 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
                     <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
@@ -642,8 +607,6 @@
                 <div class="site-state-item site-state-tags">
                   <a href="/tags/index.html">
                     
-                    
-                      
                     
                       
                     
