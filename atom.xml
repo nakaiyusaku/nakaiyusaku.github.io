@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://nakaiyusaku.github.io/"/>
-  <updated>2018-10-02T16:31:54.005Z</updated>
+  <updated>2018-10-02T16:41:00.644Z</updated>
   <id>https://nakaiyusaku.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://nakaiyusaku.github.io/2018/10/02/TweetByMSFlow/"/>
     <id>https://nakaiyusaku.github.io/2018/10/02/TweetByMSFlow/</id>
     <published>2018-10-02T14:58:07.000Z</published>
-    <updated>2018-10-02T16:31:54.005Z</updated>
+    <updated>2018-10-02T16:41:00.644Z</updated>
     
-    <content type="html"><![CDATA[<hr><h2 id="Microsoft-Flow-とは"><a href="#Microsoft-Flow-とは" class="headerlink" title="Microsoft Flow とは"></a>Microsoft Flow とは</h2><p>Microsoft公式のタスク自動化ツールです。<br>私たちが普段使っているWebサービス同士を連携させたり、自作のWebサービスにおいてもWebAPIを用意する事で他のWebサービスと連携させる事で、あらゆる自動化がノンコーディングで簡単に行えます。毎月750個のFlow(自動タスク)まで無料で使う事ができます。<br><a href="https://japan.flow.microsoft.com/ja-jp/" target="_blank" rel="noopener">公式 : https://japan.flow.microsoft.com/ja-jp/</a></p><p>今回はMicrosoft Flowで、RSSとTwitterを使ってブログ記事の投稿告知を自動化してみます。</p><h2 id="ブログ記事の投稿をTwitterで告知する"><a href="#ブログ記事の投稿をTwitterで告知する" class="headerlink" title="ブログ記事の投稿をTwitterで告知する"></a>ブログ記事の投稿をTwitterで告知する</h2><p>RSSの更新を検知し、TwitterでTweetするFlowを作成します。<br>Microsoft Flowには、公式で数多くのFlowテンプレートが存在しており、今回の目的のRSSとTwitterの連携も既にテンプレートが用意されていました。<br>↓このように多数のテンプレートが使用できます。<br><img src="/2018/10/02/TweetByMSFlow/Template.PNG" title="Microsoft Flowのテンプレート例"></p><p>実際に作成したFlowがこちらです。<br><img src="/2018/10/02/TweetByMSFlow/Flow.PNG" title="実際に作成したFlow"></p><p>実際に投稿してみます。(この記事)<br>えー、何回も失敗しました。笑<br>原因はHexoの設定だったようです。(URLを間違えていた。笑)<br>↓成功した際の実際の投稿です。<br></p><h2 id="自動化の理由-Github-Pagesの問題点"><a href="#自動化の理由-Github-Pagesの問題点" class="headerlink" title="自動化の理由(Github Pagesの問題点)"></a>自動化の理由(Github Pagesの問題点)</h2><p>本ブログはGithub Pagesで運用しています。<br>Github Pagesでは、記事を投稿してから実際に反映されるまで、たまにラグがあります。酷い時は数時間ものラグがあるそうです。<br>記事を投稿しても、Twitterでそれを告知するには、記事投稿が反映されるのを待たなければいけません。<br>しかし、記事投稿の反映を待って、確認して、告知するのでは面倒です。<br>記事投稿の反映がされたタイミングで、自動でTwitterで告知したいと思うのがプログラマの常です。</p>]]></content>
+    <content type="html"><![CDATA[<hr><h2 id="Microsoft-Flow-とは"><a href="#Microsoft-Flow-とは" class="headerlink" title="Microsoft Flow とは"></a>Microsoft Flow とは</h2><p>Microsoft公式のタスク自動化ツールです。<br>私たちが普段使っているWebサービス同士を連携させたり、自作のWebサービスにおいてもWebAPIを用意する事で他のWebサービスと連携させる事で、あらゆる自動化がノンコーディングで簡単に行えます。毎月750個のFlow(自動タスク)まで無料で使う事ができます。<br><a href="https://japan.flow.microsoft.com/ja-jp/" target="_blank" rel="noopener">公式 : https://japan.flow.microsoft.com/ja-jp/</a></p><p>今回はMicrosoft Flowで、RSSとTwitterを使ってブログ記事の投稿告知を自動化してみます。</p><h2 id="ブログ記事の投稿をTwitterで告知する"><a href="#ブログ記事の投稿をTwitterで告知する" class="headerlink" title="ブログ記事の投稿をTwitterで告知する"></a>ブログ記事の投稿をTwitterで告知する</h2><p>RSSの更新を検知し、TwitterでTweetするFlowを作成します。<br>Microsoft Flowには、公式で数多くのFlowテンプレートが存在しており、今回の目的のRSSとTwitterの連携も既にテンプレートが用意されていました。<br>↓このように多数のテンプレートが使用できます。<br><img src="/2018/10/02/TweetByMSFlow/Template.PNG" title="Microsoft Flowのテンプレート例"></p><p>実際に作成したFlowがこちらです。<br><img src="/2018/10/02/TweetByMSFlow/Flow.PNG" title="実際に作成したFlow"></p><p>実際に投稿してみます。(この記事)<br>えー、何回も失敗しました。笑<br>原因はHexoの設定だったようです。(URLを間違えていた。笑)<br>↓成功した際の実際の投稿です。<br><br>// TODO</p><h2 id="自動化の理由-Github-Pagesの問題点"><a href="#自動化の理由-Github-Pagesの問題点" class="headerlink" title="自動化の理由(Github Pagesの問題点)"></a>自動化の理由(Github Pagesの問題点)</h2><p>本ブログはGithub Pagesで運用しています。<br>Github Pagesでは、記事を投稿してから実際に反映されるまで、たまにラグがあります。酷い時は数時間ものラグがあるそうです。<br>記事を投稿しても、Twitterでそれを告知するには、記事投稿が反映されるのを待たなければいけません。<br>しかし、記事投稿の反映を待って、確認して、告知するのでは面倒です。<br>記事投稿の反映がされたタイミングで、自動でTwitterで告知したいと思うのがプログラマの常です。</p>]]></content>
     
     <summary type="html">
     
