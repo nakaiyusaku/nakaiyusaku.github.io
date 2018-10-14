@@ -106,16 +106,18 @@
 
 
 
-  <meta name="description" content="とあるさとり世代のプログラマの覚え書き。クリエイター・エンジニア向け。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="さとり世代のプログラマノート">
-<meta property="og:url" content="https://nakaiyusaku.github.io/tags/Hexo/index.html">
+  <meta name="description" content="EmscriptenについてEmscriptenは、LLVMのビットコードからJavaScriptに変換するコンパイラで、Emscriptenを使用すると、C/C++コードをJavaScriptに変換する事が出来る。 準備・ダウンロードとインストール手順は公式サイト通りに公式 : https://kripken.github.io/emscripten-site/docs/getting_sta">
+<meta name="keywords" content="Emscripten,C++,JavaScript,WebAssembly">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Emscriptenを使用してC++からJavaScriptを生成してブラウザ上で動かしてみる話">
+<meta property="og:url" content="https://nakaiyusaku.github.io/2018/10/14/EmscriptenIntroduction/index.html">
 <meta property="og:site_name" content="さとり世代のプログラマノート">
-<meta property="og:description" content="とあるさとり世代のプログラマの覚え書き。クリエイター・エンジニア向け。">
+<meta property="og:description" content="EmscriptenについてEmscriptenは、LLVMのビットコードからJavaScriptに変換するコンパイラで、Emscriptenを使用すると、C/C++コードをJavaScriptに変換する事が出来る。 準備・ダウンロードとインストール手順は公式サイト通りに公式 : https://kripken.github.io/emscripten-site/docs/getting_sta">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-10-14T13:14:22.120Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="さとり世代のプログラマノート">
-<meta name="twitter:description" content="とあるさとり世代のプログラマの覚え書き。クリエイター・エンジニア向け。">
+<meta name="twitter:title" content="Emscriptenを使用してC++からJavaScriptを生成してブラウザ上で動かしてみる話">
+<meta name="twitter:description" content="EmscriptenについてEmscriptenは、LLVMのビットコードからJavaScriptに変換するコンパイラで、Emscriptenを使用すると、C/C++コードをJavaScriptに変換する事が出来る。 準備・ダウンロードとインストール手順は公式サイト通りに公式 : https://kripken.github.io/emscripten-site/docs/getting_sta">
 
 
 
@@ -124,7 +126,7 @@
 
 
 
-  <link rel="canonical" href="https://nakaiyusaku.github.io/tags/Hexo/"/>
+  <link rel="canonical" href="https://nakaiyusaku.github.io/2018/10/14/EmscriptenIntroduction/"/>
 
 
 
@@ -134,7 +136,7 @@
   };
 </script>
 
-  <title>Tag: Hexo | さとり世代のプログラマノート</title>
+  <title>Emscriptenを使用してC++からJavaScriptを生成してブラウザ上で動かしてみる話 | さとり世代のプログラマノート</title>
   
 
 
@@ -181,7 +183,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -226,7 +228,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
   </li>
@@ -262,25 +264,6 @@
 
   
     
-
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
 
   
 
@@ -340,58 +323,199 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Hexo<small>Tag</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://nakaiyusaku.github.io/2018/10/14/EmscriptenIntroduction/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Nakai Yusaku">
+      <meta itemprop="description" content="とあるさとり世代のプログラマの覚え書き。クリエイター・エンジニア向け。">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="さとり世代のプログラマノート">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/09/29/HexoDeployWithWindowsVSCode/" itemprop="url">
-              
-                <span itemprop="name">Windows環境でHexoとVSCodeでGithub PagesにDeployする方法</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Emscriptenを使用してC++からJavaScriptを生成してブラウザ上で動かしてみる話
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-29T22:44:55+09:00"
-              content="2018-09-29" >
-          09-29
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
 
-    </header>
-  </article>
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-10-14 19:52:12 / Modified: 22:14:22" itemprop="dateCreated datePublished" datetime="2018-10-14T19:52:12+09:00">2018-10-14</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Develop/" itemprop="url" rel="index"><span itemprop="name">Develop</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <hr>
+<h2 id="Emscriptenについて"><a href="#Emscriptenについて" class="headerlink" title="Emscriptenについて"></a>Emscriptenについて</h2><p>Emscriptenは、LLVMのビットコードからJavaScriptに変換するコンパイラで、<br>Emscriptenを使用すると、C/C++コードをJavaScriptに変換する事が出来る。</p>
+<h2 id="準備"><a href="#準備" class="headerlink" title="準備"></a>準備</h2><p>・ダウンロードとインストール<br>手順は公式サイト通りに<br><a href="https://kripken.github.io/emscripten-site/docs/getting_started/downloads.html" target="_blank" rel="noopener">公式 : https://kripken.github.io/emscripten-site/docs/getting_started/downloads.html</a></p>
+<h2 id="コードを用意"><a href="#コードを用意" class="headerlink" title="コードを用意"></a>コードを用意</h2><p>Hello.cppを作成。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    std::cout &lt;&lt; &quot;Hello&quot; &lt;&lt; std::endl;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="コンパイル"><a href="#コンパイル" class="headerlink" title="コンパイル"></a>コンパイル</h2><p>ターミナル上で、以下のコマンドを打つ<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">emcc hello.cpp -o hello.html</span><br></pre></td></tr></table></figure></p>
+<h2 id="結果"><a href="#結果" class="headerlink" title="結果"></a>結果</h2><p>こんなページが出力される。<br><a href="https://nakaiyusaku.github.io/EmscriptenHello/hello.html">https://nakaiyusaku.github.io/EmscriptenHello/hello.html</a></p>
+<p>コンソールにHelloと表示されていれば成功。</p>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Emscripten/" rel="tag"># Emscripten</a>
+          
+            <a href="/tags/C/" rel="tag"># C++</a>
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+            <a href="/tags/WebAssembly/" rel="tag"># WebAssembly</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/02/TweetByMSFlow/" rel="next" title="Microsoft Flowを使って、ブログ記事の投稿をTwitterで自動的に告知する方法">
+                <i class="fa fa-chevron-left"></i> Microsoft Flowを使って、ブログ記事の投稿をTwitterで自動的に告知する方法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -412,8 +536,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -530,6 +663,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Emscriptenについて"><span class="nav-number">1.</span> <span class="nav-text">Emscriptenについて</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#準備"><span class="nav-number">2.</span> <span class="nav-text">準備</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#コードを用意"><span class="nav-number">3.</span> <span class="nav-text">コードを用意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#コンパイル"><span class="nav-number">4.</span> <span class="nav-text">コンパイル</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#結果"><span class="nav-number">5.</span> <span class="nav-text">結果</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -656,6 +805,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.2"></script>
+
+
 
   
 
